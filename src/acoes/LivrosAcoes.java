@@ -184,24 +184,4 @@ public class LivrosAcoes {
 		return true;
 	}
 	
-
-	/**
-	 * Verifica se o código do LIVRO está no arquivo de dados e retorna o livro associado
-	 * @param codigo Código do produto a ser visualizado
-	 * @return Produto
-	 */
-	
-	public Livro infoLivro(int codigo) {
-		
-		Livro p = null;
-		livros = recupera();
-		
-		for (Livro livro : livros) {
-			if (livro.getCodigo() == codigo) {
-				p = livro;
-			}
-		}
-		return p;
-	}
-
 }
